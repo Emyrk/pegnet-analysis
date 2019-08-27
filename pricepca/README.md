@@ -10,7 +10,7 @@ python3 pca.py --data 206423.csv -p
 
 > What the heck am I looking at?
 
-The graphs shows are the 32 dimensional price data sets projected onto the 1st, 3rd, and 4th eigen vectors (feel free to play with which eigen vectors to project onto). This will lose information, but should keep as much variation information as possible. The axises are therefore a bit difficult to comprehend. First all price data is normalized to remove scale. This means that each axis is a combination of normalized prices multiplied with some coeffecient. If you think of each opr as a matrix of 1x32, each eigen vector is a matrix of 32x1. By using 3 eigen vectors, the result is 3 dimensions, and if you print the eigen vectors, you can see which prices most affect the value for the axis.
+The graphs shows are the 32 dimensional price data sets projected onto the 1st, 3rd, and 4th eigen vectors (feel free to play with which eigen vectors to project onto). This will lose information, but should keep as much variation information as possible. The axises are therefore a bit difficult to comprehend. First all price data is normalized to remove scale. This means that each axis is a combination of normalized prices multiplied with some coeffecient. If you think of each opr as a matrix of 1x32, each eigen vector is a matrix of 32x1. By using 3 eigen vectors, the result is 3 dimensions, and if you print the eigen vectors, you can see which prices most affect the value for the axis. Jitter is added to all the datapoints to prevent many data points from appearing as a single pt.
 
 **Legend**
 - Blue dots == top 50
